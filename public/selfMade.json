@@ -2,80 +2,93 @@
     {
       "bookId": 1,
       "bookName": "The Great Gatsby",
+      "nickname": "Gatsby",
       "author": "F. Scott Fitzgerald",
-      "image": "great_gatsby.jpg",
+      "image": "https://img.freepik.com/free-vector/bike-guy-wattpad-book-cover_23-2149452163.jpg?w=740&t=st=1711389222~exp=1711389822~hmac=9d3ed19c7c012bc9537430fe50a877bd5fa2ec496c3f7cc3d823078c5af33e0d",
       "review": "A timeless classic exploring the decadence and disillusionment of the American Dream.",
       "totalPages": 180,
       "rating": 4.5,
       "category": "Fiction",
       "tags": ["Classics", "Romance", "Tragedy"],
       "publisher": "Scribner",
-      "yearOfPublishing": 1925
+      "yearOfPublishing": 1925,
+      "identity": "Adult"
     },
     {
       "bookId": 2,
       "bookName": "To Kill a Mockingbird",
+      "nickname": "Mockingbird",
       "author": "Harper Lee",
-      "image": "to_kill_a_mockingbird.jpg",
+      "image": "https://images.unsplash.com/photo-1698195811212-2cdb4a0232f9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "review": "A powerful portrayal of racial injustice and moral growth in the American South.",
       "totalPages": 324,
       "rating": 4.8,
       "category": "Fiction",
       "tags": ["Social Issues", "Coming-of-Age"],
       "publisher": "J. B. Lippincott & Co.",
-      "yearOfPublishing": 1960
+      "yearOfPublishing": 1960,
+      "identity": "Adult"
     },
     {
       "bookId": 3,
       "bookName": "1984",
+      "nickname": "1984",
       "author": "George Orwell",
-      "image": "1984.jpg",
+      "image": "https://img.freepik.com/free-vector/abstract-elegant-winter-book-cover_23-2148798745.jpg?w=740&t=st=1711389053~exp=1711389653~hmac=ab47220b9cb9d099fb3be3a9d897efe00fde840d087870ad43baa12b92ff9d8c",
       "review": "A dystopian masterpiece warning against totalitarianism and government surveillance.",
       "totalPages": 328,
       "rating": 4.6,
       "category": "Fiction",
       "tags": ["Dystopian", "Political"],
       "publisher": "Secker & Warburg",
-      "yearOfPublishing": 1949
+      "yearOfPublishing": 1949,
+      "identity": "Adult"
     },
     {
       "bookId": 4,
       "bookName": "The Catcher in the Rye",
+      "nickname": "Catcher",
       "author": "J.D. Salinger",
-      "image": "catcher_in_the_rye.jpg",
+      "image": "https://img.freepik.com/premium-vector/vector-abstract-elegant-nature-book-cover_807020-181.jpg?w=1380",
       "review": "A coming-of-age novel exploring teenage angst and alienation in society.",
       "totalPages": 224,
       "rating": 4.3,
       "category": "Fiction",
       "tags": ["Teenage", "Identity", "Rebellion"],
       "publisher": "Little, Brown and Company",
-      "yearOfPublishing": 1951
+      "yearOfPublishing": 1951,
+      "identity": "Adult"
+
     },
     {
       "bookId": 5,
       "bookName": "Pride and Prejudice",
+      "nickname": "Prejudice",
       "author": "Jane Austen",
-      "image": "pride_and_prejudice.jpg",
+      "image": "https://img.freepik.com/premium-vector/cover-annual-report_33216-94.jpg?w=740",
       "review": "A timeless romance exploring social class, manners, and marriage in 19th-century England.",
       "totalPages": 432,
       "rating": 4.7,
       "category": "Fiction",
       "tags": ["Romance", "Classic Literature"],
       "publisher": "T. Egerton, Whitehall",
-      "yearOfPublishing": 1813
+      "yearOfPublishing": 1813,
+      "identity": "child"
     },
     {
       "bookId": 6,
       "bookName": "Harry Potter and the Philosopher's Stone",
+      "nickname": "Philosopher's",
       "author": "J.K. Rowling",
-      "image": "harry_potter.jpg",
+      "image": "https://img.freepik.com/premium-vector/modern-business-brochure-template_71228-348.jpg?w=740",
       "review": "A magical adventure introducing readers to the wizarding world of Harry Potter.",
       "totalPages": 332,
       "rating": 4.9,
       "category": "Fantasy",
       "tags": ["Magic", "Adventure", "Friendship"],
       "publisher": "Bloomsbury",
-      "yearOfPublishing": 1997
+      "yearOfPublishing": 1997,
+      "identity": "child"
     }
   ]
   

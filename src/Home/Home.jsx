@@ -1,6 +1,6 @@
 import React from 'react'
 import Bannar from './components/Bannars/Bannar'
-import Cards from './components/Cards/cards'
+import Cards from './components/Cards/card'
 
 const Home = () => {
   return (

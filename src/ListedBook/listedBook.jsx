@@ -3,7 +3,7 @@ import NoteContext from '../context/noteContext';
 
 const ListedBook = () => {
   const cardInfo = useContext(NoteContext);
-    console.log(cardInfo);
+    // console.log(cardInfo);
   return (
     <div>
         this is list
