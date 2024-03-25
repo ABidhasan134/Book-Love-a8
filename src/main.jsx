@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Home from './Home/Home.jsx'
 import ListedBook from './ListedBook/listedBook.jsx'
 import ReadedBook from './ReadedBook/readedBook.jsx'
 import ErrorHandel from './error/error.jsx'
+import CardDitails from './Home/components/Cards/cardDitails.jsx'
+
 
 
 
@@ -27,7 +29,12 @@ const router=createBrowserRouter([
   {
     path: "/readed",
     element: <ReadedBook></ReadedBook>
-  }
+  },
+  {
+    path:"/details/:id",
+    loader: ({ params }) => params.id,
+    element: <CardDitails></CardDitails>
+    }
 ]
 },])
 ReactDOM.createRoot(document.getElementById('root')).render(
