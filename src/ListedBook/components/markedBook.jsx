@@ -3,22 +3,10 @@ import React, { useContext, useEffect, useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaUsers } from "react-icons/fa6";
 import { FaRegFileLines } from "react-icons/fa6";
-import { IoChevronDown } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const MarkedBook = ({ book }) => {
-  console.log(book);
-  // State to hold the filtered list of marked books
-  // const [markedBooks, setMarkedBooks] = useState([]);
-  // const cardInfo = useContext(NoteContext);
-
-  // useEffect(() => {
-  //     const getFromLocal = JSON.parse(localStorage.getItem("book-id")) || [];
-  //     // Filter the items based on the IDs stored in local storage
-  //     const filteredBooks = cardInfo.filter(book => getFromLocal.includes(book.bookId));
-  //     // Update state with the filtered list of marked books
-  //     setMarkedBooks(filteredBooks);
-  //     // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, [cardInfo]);
+ 
 
   return (
     <div>
@@ -32,10 +20,10 @@ const MarkedBook = ({ book }) => {
             {/* tags and location  */}
             <div className="flex items-center gap-4 mb-6">
               <p className="font-bold ">Tags:</p>
-              <p className="text-sky-400 shadow-sm shadow-green-100">
+              <p className="shadow-md p-4 bg-sky-50 rounded-3xl text-sky-600">
                 #{book.tags[0]}
               </p>
-              <p className="text-sky-400 shadow-sm shadow-green-100">
+              <p className="shadow-md p-4 bg-sky-50 rounded-3xl text-sky-600">
                 #{book.tags[1]}
               </p>
               <div className="flex items-center ml-10">
@@ -57,9 +45,10 @@ const MarkedBook = ({ book }) => {
             <button className="btn bg-orange-100 text-orange-500 rounded-badge mx-4">
               Rating:{book.rating}
             </button>
-            <button className="btn bg-green-500 text-white rounded-badge mx-4">
+            <Link to={`/details/${book.bookId}`} ><button className="btn bg-green-500 text-white rounded-badge mx-4">
               View Details
-            </button>
+            </button></Link>
+            {/* to={`/details/${items.bookId}` */}
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ const ListedBook = () => {
   const [markedBooks, setMarkedBooks] = useState([]);
   const [displayBook, setDisplayBook] = useState([]);
   const [markeWish, setMarkedWish] = useState([]);
-  const [wishDisplay,setWishDisplay] = useState([]);
+  const [wishDisplay, setWishDisplay] = useState([]);
 
   const handelShort = (etype) => {
     if (etype === "all") {
@@ -31,8 +31,8 @@ const ListedBook = () => {
     }
     // Add additional sorting logic for other criteria if needed
   };
-  // 
-// wish sort start
+  //
+  // wish sort start
   const handelWish = (etype) => {
     if (etype === "all") {
       setWishDisplay(wishDisplay);
@@ -53,7 +53,7 @@ const ListedBook = () => {
     }
   };
   // wish short function end
-// finding wish data
+  // finding wish data
   useEffect(() => {
     const getFromLocal = JSON.parse(localStorage.getItem("wish-id")) || [];
     const filteredBooks = cardInfo.filter((book) =>
@@ -63,7 +63,7 @@ const ListedBook = () => {
     setWishDisplay(filteredBooks);
   }, [cardInfo]);
   // stop finding wish data
-// finding read book data
+  // finding read book data
   useEffect(() => {
     const getFromLocal = JSON.parse(localStorage.getItem("book-id")) || [];
     const filteredBooks = cardInfo.filter((book) =>
@@ -75,88 +75,93 @@ const ListedBook = () => {
   // console.log(displayBook);
 
   return (
-    <div role="tablist" className="tabs tabs-lifted">
-      {/* Read section start */}
-      <input
-        type="radio"
-        name="my_tabs_2"
-        role="tab"
-        className="tab"
-        aria-label="Read Book"
-        checked
-      />
-
-      <div
-        role="tabpanel"
-        className="tab-content bg-base-100 border-base-300 rounded-box p-6"
-      >
-        <div className="justify-center text-center">
-          <details className="dropdown">
-            <summary className="m-1 btn bg-green-500 hover:bg-green-600">
-              sort by<IoChevronDown></IoChevronDown>
-            </summary>
-            <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-              <li>
-                <a onClick={() => handelShort("all")}>All</a>
-              </li>
-              <li>
-                <a onClick={() => handelShort("rating")}>Reating</a>
-              </li>
-              <li>
-                <a onClick={() => handelShort("page")}>Number of Page</a>
-              </li>
-              <li>
-                <a onClick={() => handelShort("year")}>Publishing Year</a>
-              </li>
-            </ul>
-          </details>
-        </div>
-
-        {displayBook.map((book) => (
-          <MarkedBook book={book} />
-        ))}
+    <div>
+      <div className="bg-pink-50 p-4 flex justify-center items-center rounded-s-2xl mb-4">
+        <h1 className="text-5xl font-bold">Book</h1>
       </div>
-      {/* Read section end */}
-{/* wish area start */}
-      <input
-        type="radio"
-        name="my_tabs_2"
-        role="tab"
-        className="tab"
-        aria-label="WishList"
-        checked
-      />
-      <div
-        role="tabpanel"
-        className="tab-content bg-base-100 border-base-300 rounded-box p-6"
-      >
-        <div className="justify-center text-center">
-          <details className="dropdown">
-            <summary className="m-1 btn bg-green-500 hover:bg-green-600">
-              sort by<IoChevronDown></IoChevronDown>
-            </summary>
-            <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
-              <li>
-                <a onClick={() => handelWish("all")}>All</a>
-              </li>
-              <li>
-                <a onClick={() => handelWish("rating")}>Reating</a>
-              </li>
-              <li>
-                <a onClick={() => handelWish("page")}>Number of Page</a>
-              </li>
-              <li>
-                <a onClick={() => handelWish("year")}>Publishing Year</a>
-              </li>
-            </ul>
-          </details>
-        </div>
+      <div role="tablist" className="tabs tabs-lifted">
+        {/* Read section start */}
+        <input
+          type="radio"
+          name="my_tabs_2"
+          role="tab"
+          className="tab"
+          aria-label="Read Book"
+          checked
+        />
 
-        {wishDisplay.map((book) => (
-          <WishMake book={book} />
-        ))}
+        <div
+          role="tabpanel"
+          className="tab-content bg-base-100 border-base-300 rounded-box p-6"
+        >
+          <div className="justify-center text-center">
+            <details className="dropdown">
+              <summary className="m-1 btn bg-green-500 hover:bg-green-600">
+                sort by<IoChevronDown></IoChevronDown>
+              </summary>
+              <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                <li>
+                  <a onClick={() => handelShort("all")}>All</a>
+                </li>
+                <li>
+                  <a onClick={() => handelShort("rating")}>Reating</a>
+                </li>
+                <li>
+                  <a onClick={() => handelShort("page")}>Number of Page</a>
+                </li>
+                <li>
+                  <a onClick={() => handelShort("year")}>Publishing Year</a>
+                </li>
+              </ul>
+            </details>
+          </div>
+
+          {displayBook.map((book) => (
+            <MarkedBook book={book} />
+          ))}
+        </div>
+        {/* Read section end */}
+        {/* wish area start */}
+        <input
+          type="radio"
+          name="my_tabs_2"
+          role="tab"
+          className="tab"
+          aria-label="WishList"
+          
+        />
+        <div
+          role="tabpanel"
+          className="tab-content bg-base-100 border-base-300 rounded-box p-6"
+        >
+          <div className="justify-center text-center">
+            <details className="dropdown">
+              <summary className="m-1 btn bg-green-500 hover:bg-green-600">
+                sort by<IoChevronDown></IoChevronDown>
+              </summary>
+              <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                <li>
+                  <a onClick={() => handelWish("all")}>All</a>
+                </li>
+                <li>
+                  <a onClick={() => handelWish("rating")}>Reating</a>
+                </li>
+                <li>
+                  <a onClick={() => handelWish("page")}>Number of Page</a>
+                </li>
+                <li>
+                  <a onClick={() => handelWish("year")}>Publishing Year</a>
+                </li>
+              </ul>
+            </details>
+          </div>
+
+          {wishDisplay.map((book) => (
+            <WishMake book={book} />
+          ))}
+        </div>
+        {/* wish area start */}
       </div>
-      {/* wish area start */}
     </div>
   );
 };
