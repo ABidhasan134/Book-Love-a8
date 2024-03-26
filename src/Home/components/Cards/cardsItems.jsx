@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import { CiStar } from "react-icons/ci";
 
 const CardsItems = ({ items }) => {
-//   const handleClick = () => {
-//     // You can use any navigation logic here if required
-//     // For example, if you want to navigate to a specific route, use history.push('/')
-//     // console.log("Card clicked:", items);
-//     // onClick={handleClick}
-//   };
+  //   const handleClick = () => {
+  //     // You can use any navigation logic here if required
+  //     // For example, if you want to navigate to a specific route, use history.push('/')
+  //     // console.log("Card clicked:", items);
+  //     // onClick={handleClick}
+  //   };
 
   return (
-    <Link to={`/details/${items.bookId}`} >
+    <Link to={`/details/${items.bookId}`}>
       <div className="card w-96 bg-base-100 border-[2px] border-gray-300 mt-5 cursor-pointer">
         <figure className="px-10 pt-10">
           <img src={items.image} alt="Books" className="rounded-xl" />

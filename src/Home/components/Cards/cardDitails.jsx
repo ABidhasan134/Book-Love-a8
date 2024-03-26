@@ -1,21 +1,30 @@
 import React, { useContext, useState } from "react";
 import { useLoaderData } from "react-router-dom";
+
 import NoteContext from "../../../context/noteContext";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { notify, savesordId, wishSaveId } from "../../localStor/localStor";
 // import ShowDitails from './showDitails';
 
 const CardDitails = () => {
+  // geting data from loder
   const idget = useLoaderData();
+  // all data from context Api
   const cardInfo = useContext(NoteContext);
+// add tost 
 
-  const handelTost=(e)=>{
-    console.log(e);
-    let storValue=[]
-     storValue= localStorage.setItem("id",JSON.stringify(e));
+  const handelStor=(id)=>{
+    savesordId(id);
+    // notify("Add to read successfully!");
+  }
+  const handelWishList=(id)=>{
+    // console.log(id);
+    wishSaveId(id);
   }
 
-
   const book = cardInfo.find((book) => book.bookId == idget);
-  console.log(book);
+  // console.log(book);
   return (
     <div className="card lg:card-side bg-sky-50 shadow-xl">
       <figure>
@@ -39,6 +48,7 @@ const CardDitails = () => {
           <p className="shadow-md p-4 bg-sky-50 rounded-3xl text-sky-600">
             #{book.tags[1]}
           </p>
+      
         </section>
         <hr className="border-1 border-gray-400 w-full mt-6" />
 
@@ -62,13 +72,17 @@ const CardDitails = () => {
         </div>
 
         <div className="card-actions mt-6 gap-6">
-          <button onClick={()=>handelTost(book.bookId)}
-          className="btn bg-transparent border-2 border-sky-300 hover:bg-sky-400 text-2xl">
+          <button
+            onClick={() => handelStor(book.bookId)}
+            className="btn bg-transparent border-2 border-sky-300 hover:bg-sky-400 text-2xl"
+          >
             Read
           </button>
-          <button className="btn hover:bg-transparent border-2 border-green-400 bg-green-400 text-2xl">
+          <button onClick={()=>handelWishList(book.bookId)}
+          className="btn hover:bg-transparent border-2 border-green-400 bg-green-400 text-2xl">
             Wish List
           </button>
+          <ToastContainer />
         </div>
       </div>
     </div>
