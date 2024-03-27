@@ -2,14 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ShowWriters = ({ person }) => {
-  // console.log(person)
-  const handelClick=()=>{
-    alert({person})
-  }
+  
   return (
     <div className="hero h-auto bg-orange-50 rounded-2xl mb-6">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={person.img} className="w-auto rounded-lg shadow-2xl" />
+        <img src={person.img} className="sm:max-w-md w-auto rounded-lg shadow-2xl" />
         <div>
           <h1 className="sm:text-5xl text-3xl font-bold">{person.name}</h1>
           <p className="sm:py-6 py-3 text-2xl opacity-85">{person.biography}</p>
