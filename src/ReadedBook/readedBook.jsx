@@ -16,7 +16,7 @@ const ReadedBook = () => {
   }, [cardInfo]);
 
   return (
-    <div>
+    <div style={{ width: '100%', height: '400px' }}>
       <ShowChart data={chart} />
     </div>
   );

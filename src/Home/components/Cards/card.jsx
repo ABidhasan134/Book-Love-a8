@@ -9,8 +9,9 @@ const Cards = () => {
     
     return (
         <div>
-            <h1 className='text-5xl font-bold text-center p-6 my-10'>Books</h1>
-            <div className='grid grid-cols-3 mb-10'>
+            <h1 className='sm:text-5xl text-3xl font-bold text-center sm:p-6 p-2 my-10'>Books</h1>
+            <div className='grid md:grid-cols-3 sm:grid-cols-2 grid-col-1 
+            justify-center gap-6 mb-10 h-[665px]'>
             {
                 cardInfo.map((book)=>{
                     // console.log(book);

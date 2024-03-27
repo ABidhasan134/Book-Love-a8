@@ -1,5 +1,5 @@
 import React from 'react';
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
 
@@ -18,7 +18,8 @@ const TriangleBar = (props) => {
 
 const ShowChart = ({ data }) => {
   return (
-    <BarChart
+    <ResponsiveContainer>
+      <BarChart
       width={700}
       height={700}
       data={data}
@@ -38,6 +39,7 @@ const ShowChart = ({ data }) => {
         ))}
       </Bar>
     </BarChart>
+    </ResponsiveContainer>
   );
 }
 

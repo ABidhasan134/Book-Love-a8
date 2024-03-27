@@ -12,7 +12,7 @@ const CardsItems = ({ items }) => {
 
   return (
     <Link to={`/details/${items.bookId}`}>
-      <div className="card w-96 bg-base-100 border-[2px] border-gray-300 mt-5 cursor-pointer">
+      <div className="card w-auto mx-6 bg-base-100 border-[2px] border-gray-300 mt-5 cursor-pointer">
         <figure className="px-10 pt-10">
           <img src={items.image} alt="Books" className="rounded-xl" />
         </figure>
