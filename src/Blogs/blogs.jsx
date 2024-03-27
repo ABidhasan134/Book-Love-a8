@@ -3,8 +3,8 @@ import React from "react";
 const Blogs = ({ blog }) => {
   console.log(blog);
   return (
-    <div className="bg-base-100 p-6 shadow-sm mx-10 mb-10">
-      <div className="flex items-center gap-4 p-4">
+    <div className="bg-base-100 p-6 shadow-sm sm:mx-10 mx-4 sm:mb-10 mb-4 border-2 border-gray-100 rounded-sm">
+      <div className="sm:flex grid items-center gap-4 p-4">
         <h2 className="card-title">{blog.title}</h2>        
         <p className="opacity-60">Writen by: {blog.writer}</p>
         <p className="opacity-60">Publishing Year: {blog.writenyear}</p>
