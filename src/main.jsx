@@ -10,6 +10,7 @@ import ListedBook from "./ListedBook/components/listedBook.jsx";
 import ReadedBook from "./ReadedBook/readedBook.jsx";
 import ErrorHandel from "./error/error.jsx";
 import Pepoles from "./writers/pepoles.jsx";
+import Blog from "./Blogs/blog.jsx";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path:"/writers",
         element: <Pepoles></Pepoles>
+      },
+      {
+        path: "/blogs",
+        element: <Blog></Blog>
       }
     ],
   },

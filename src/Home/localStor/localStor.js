@@ -1,4 +1,4 @@
-import {toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const notify = (massage) => toast(massage);
@@ -16,8 +16,17 @@ const savesordId = (id) => {
   let stordIds = getStorBookId(); // Retrieve existing IDs from local storage
   if (!stordIds.includes(id)) { // Check if the ID is not already stored
     notify("Book read add")
+    // removeFromWishList(id);
     stordIds.push(id); // Add the new ID to the array
     localStorage.setItem("book-id", JSON.stringify(stordIds)); // Store the updated array in local storage
+  }
+  if(wishSaveId.length>0){
+    let wishIds = wishSaveId();
+    const index = wishIds.indexOf(id);
+    if (index !== -1) {
+      wishIds.splice(index, 1)[0];
+      localStorage.setItem("wish-id", JSON.stringify(wishIds));
+    }
   }
   else{
     notify("Book already add")
@@ -62,4 +71,14 @@ const wishSaveId = (id) => {
 }
 
 
-export{getStorBookId,savesordId,getWishId,wishSaveId}
+// const removeFromWishList = (id) => {
+//   let wishIds = wishSaveId();
+//   const index = wishIds.indexOf(id);
+//   if (index !== -1) {
+//     wishIds.splice(index, 1)[0];
+//     localStorage.setItem("wish-id", JSON.stringify(wishIds));
+//   }
+// }
+
+
+export { getStorBookId, getWishId, savesordId, wishSaveId };
