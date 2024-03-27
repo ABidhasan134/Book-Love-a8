@@ -23,7 +23,7 @@ const savesordId = (id) => {
     notify("Book already add")
   }
 };
-// getStorBookId();
+// console.log(getStorBookId());
 
 const getWishId=()=>{
   const wishId=localStorage.getItem("wish-id");
@@ -35,28 +35,30 @@ const getWishId=()=>{
 
 
 const wishSaveId = (id) => {
-  let wishIds = getWishId(); // Retrieve existing IDs from local storage
-  const chackIds=getStorBookId();
-  // console.log(wishIds);
+  let wishIds = getWishId(); // 
+  // console.log(!getStorBookId.includes(id))
+  // const getone=getStorBookId.includes(id)
 
-  if (!wishIds.includes(id) && !chackIds.includes(id)){
+  if (!wishIds.includes(id) && !getStorBookId().includes(id)){
     notify("Book save in Wish List")
     // If ID is not already stored, add it
     wishIds.push(id);
     localStorage.setItem("wish-id", JSON.stringify(wishIds));
-  } else {
+  } 
+  else {
     // If ID already exists, remove it
-    const index = wishIds.indexOf(id);
-    if (index !== -1) {
-      const removedItem = wishIds.splice(index, 1)[0]; // Remove the ID from the array and get the removed item
-      localStorage.setItem("wish-id", JSON.stringify(wishIds)); // Store the updated array in local storage
-      savesordId(removedItem); // Pass the removed item to savesordId function
-      notify("Book add to read")
-    }
-    else{
-      notify("You already readed this book")
-    }
-  }
+      const index = wishIds.indexOf(id);
+      // const exicut=savesordId.indexOf(id); 
+      if (index !== -1) {
+        const removedItem = wishIds.splice(index, 1)[0]; // Remove the ID from the array and get the removed item
+        localStorage.setItem("wish-id", JSON.stringify(wishIds)); // Store the updated array in local storage
+        savesordId(removedItem); // Pass the removed item to savesordId function
+        notify("Book add to read")
+      }
+      else{
+        notify("You have already read this book");
+      }
+      }
 }
 
 

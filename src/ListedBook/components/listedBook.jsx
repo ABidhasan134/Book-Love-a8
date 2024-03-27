@@ -14,7 +14,7 @@ const ListedBook = () => {
   const handelShort = (etype) => {
     if (etype === "all") {
       setDisplayBook(markedBooks);
-      console.log("all");
+      // console.log("all");
     } else if (etype === "page") {
       const sortedBooks = [...markedBooks].sort(
         (a, b) => a.totalPages - b.totalPages

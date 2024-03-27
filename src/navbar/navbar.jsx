@@ -13,6 +13,7 @@ const Navbar = () => {
       <li><NavLink to="/" activeClassName="active">Home</NavLink></li>
       <li><NavLink to="/list" activeClassName="active">Listed Book</NavLink></li>
       <li><NavLink to="/readed" activeClassName="active">Page to Read</NavLink></li>
+      <li><NavLink to="/writers" activeClassName="active">Writers</NavLink></li>
     </>
   );
   return (

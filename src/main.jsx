@@ -9,6 +9,7 @@ import CardDitails from "./Home/components/Cards/cardDitails.jsx";
 import ListedBook from "./ListedBook/components/listedBook.jsx";
 import ReadedBook from "./ReadedBook/readedBook.jsx";
 import ErrorHandel from "./error/error.jsx";
+import Pepoles from "./writers/pepoles.jsx";
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
         loader: ({ params }) => params.id,
         element: <CardDitails></CardDitails>,
       },
+      {
+        path:"/writers",
+        element: <Pepoles></Pepoles>
+      }
     ],
   },
 ]);

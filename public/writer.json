@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Humayun Ahmed",
+    "birth_year": 1948,
+    "death_year": 2012,
+    "nationality": "Bangladeshi",
+    "notable_works": ["Shonkhonil Karagar", "Nondito Noroke"],
+    "genre": ["Fiction", "Drama"],
+    "language": "Bengali",
+    "awards": ["Ekushey Padak", "Bangla Academy Award"],
+    "biography": "Humayun Ahmed was a Bangladeshi author, playwright, and filmmaker. He is considered one of the most popular writers in Bengali literature.",
+    "influence": "His works have inspired generations of readers and writers in Bangladesh and beyond.",
+    "phone":"123456780",
+    "img":"https://allbanglanewspaper.net/upload/2019/07/46a8cf360b1e8c73-humayun-ahmed.jpg"
+    
+  },
+  {
+    "name": "Rabindranath Tagore",
+    "birth_year": 1861,
+    "death_year": 1941,
+    "nationality": "Bangladeshi",
+    "notable_works": ["Gitanjali", "Kabuliwala"],
+    "genre": ["Poetry", "Short Stories"],
+    "language": "Bengali",
+    "awards": ["Nobel Prize in Literature (1913)"],
+    "biography": "Rabindranath Tagore was a Bengali polymath who reshaped Bengali literature and music, as well as Indian art with contextual modernism in the late 19th and early 20th centuries.",
+    "influence": "His contributions to Bengali literature and music are immense, and his works continue to be celebrated worldwide.",
+    "phone":"123456781",
+    "img": "https://cdn.britannica.com/49/134949-050-242B08C7/Rabindranath-Tagore.jpg"
+  },
+  {
+    "name": "Muhammad Zafar Iqbal",
+    "birth_year": 1952,
+    "death_year": null,
+    "nationality": "Bangladeshi",
+    "notable_works": ["Jolo Manob", "Dipu Number Two"],
+    "genre": ["Science Fiction", "Children's Literature"],
+    "language": "Bengali",
+    "awards": ["Bangla Academy Award"],
+    "biography": "Muhammad Zafar Iqbal is a Bangladeshi author, physicist, and activist. He is celebrated for his contribution to Bengali science fiction and children's literature.",
+    "influence": "His works have inspired a whole generation of young readers and science enthusiasts in Bangladesh.",
+    "phone":"123456782",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/4/44/Muhammed_Zafar_Iqbal_by_NKS%283%29.jpg"
+  },
+  {
+    "name": "Shirshendu Mukhopadhyay",
+    "birth_year": 1935,
+    "death_year": null,
+    "nationality": "Bangladeshi",
+    "notable_works": ["Manojder Adbhut Baari", "Goshai Baganer Bhoot"],
+    "genre": ["Fiction", "Adventure"],
+    "language": "Bengali",
+    "awards": ["Bankim Puraskar", "Ananda Puraskar"],
+    "biography": "Shirshendu Mukhopadhyay is a Bangladeshi author who has written over 200 novels and numerous short stories. He is known for his unique storytelling and vivid characters.",
+    "influence": "His works have captivated readers of all ages and are considered classics in Bengali literature.",
+    "phone":"123456783",
+    "img": "https://assets.telegraphindia.com/telegraph/2022/Mar/1646893108_whatsapp-image-2022-03-10-at-11-40-06.jpeg"
+  },
+  {
+    "name": "Kazi Nazrul Islam",
+    "birth_year": 1899,
+    "death_year": 1976,
+    "nationality": "Bangladeshi",
+    "notable_works": ["Bidrohi", "Nazrul Geeti"],
+    "genre": ["Poetry", "Music"],
+    "language": "Bengali",
+    "awards": ["Banga Vibhushan", "Padma Bhushan"],
+    "biography": "Kazi Nazrul Islam was a Bengali poet, musician, and revolutionary. He is commonly known as the 'Bidrohi Kobi' (Rebel Poet) for his activism and protest poetry.",
+    "influence": "His poetry and music played a significant role in the Indian independence movement and continue to inspire artists and activists.",
+    "phone": "123456784",
+    "img": "https://m.media-amazon.com/images/M/MV5BNDE3YjUwYWMtNWY5My00N2MwLWE2ODMtMGFkZDE1ZDJhOTY0XkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg"
+  },
+  {
+    "name": "Syed Shamsul Haque",
+    "birth_year": 1935,
+    "death_year": 2016,
+    "nationality": "Bangladeshi",
+    "notable_works": ["Nishiddho Loban", "Shongkhoneel Karagar"],
+    "genre": ["Poetry", "Novel"],
+    "language": "Bengali",
+    "awards": ["Bangla Academy Award", "Ekushey Padak"],
+    "biography": "Syed Shamsul Haque was a Bangladeshi poet, novelist, and playwright. He is considered one of the most versatile and innovative writers in Bengali literature.",
+    "influence": "His works continue to inspire writers and readers alike, and he remains a towering figure in Bangladeshi literature.",
+    "phone":"123456785",
+    "img": "https://i.pinimg.com/originals/2a/9c/e0/2a9ce0f7f6059ed6e8eebb186fbb98bb.jpg"
+  }
+]
