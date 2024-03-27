@@ -47,7 +47,7 @@ const ShowWriters = ({ person }) => {
           <hr className="border-1 border-gray-400 my-4 w-max-auto" />
           {/* award section end */}
          
-          <Link to={person.url} className="btn mt-4 bg-sky-400 hover:bg-sky-800 hover:text-white">Read about {person.name}</Link>
+          <Link to={person.url} className="btn mt-4 bg-sky-400 hover:bg-sky-800 hover:text-white">More about {person.name}</Link>
         </div>
         
       </div>

@@ -3,7 +3,7 @@ import React from "react";
 const Blogs = ({ blog }) => {
   console.log(blog);
   return (
-    <div className="bg-base-100 p-6 shadow-sm m-10">
+    <div className="bg-base-100 p-6 shadow-sm mx-10 mb-10">
       <div className="flex items-center gap-4 p-4">
         <h2 className="card-title">{blog.title}</h2>        
         <p className="opacity-60">Writen by: {blog.writer}</p>
@@ -13,7 +13,7 @@ const Blogs = ({ blog }) => {
         <p className="text-ellipsis whitespace-nowrap overflow-hidden">{blog.blog}</p>
       </div>
       {/* Open the modal using document.getElementById('ID').showModal() method */}
-<button className="btn mt-4 bg-sky-400 hover:bg-sky-700 hover:text-white" onClick={()=>document.getElementById('my_modal_1').showModal()}>Read More</button>
+<button className="btn mt-4 ml-4 bg-sky-400 hover:bg-sky-700 hover:text-white" onClick={()=>document.getElementById('my_modal_1').showModal()}>Read More</button>
 <dialog id="my_modal_1" className="modal">
   <div className="modal-box bg-gray-800 text-white">
     <h3 className="font-bold text-lg">{blog.title}</h3>
