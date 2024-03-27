@@ -4,7 +4,7 @@ import { useLoaderData } from "react-router-dom";
 import NoteContext from "../../../context/noteContext";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { notify, savesordId, wishSaveId } from "../../localStor/localStor";
+import { notify, saveStoredId, saveWishId } from "../../localStor/localStor";
 // import ShowDitails from './showDitails';
 
 const CardDitails = () => {
@@ -15,12 +15,12 @@ const CardDitails = () => {
 // add tost 
 
   const handelStor=(id)=>{
-    savesordId(id);
+    saveStoredId(id);
     // notify("Add to read successfully!");
   }
   const handelWishList=(id)=>{
     // console.log(id);
-    wishSaveId(id);
+    saveWishId(id);
   }
 
   const book = cardInfo.find((book) => book.bookId == idget);

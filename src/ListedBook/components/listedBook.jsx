@@ -128,7 +128,6 @@ const ListedBook = () => {
           role="tab"
           className="tab"
           aria-label="WishList"
-          
         />
         <div
           role="tabpanel"
