@@ -12,6 +12,7 @@ const CardDitails = () => {
   const idget = useLoaderData();
   // all data from context Api
   const cardInfo = useContext(NoteContext);
+  console.log(cardInfo);
 // add tost 
 
   const handelStor=(id)=>{
@@ -70,7 +71,7 @@ const CardDitails = () => {
             <p className="font-bold">{book.rating}</p>
           </div>
         </div>
-
+        {/* add in storage */}
         <div className="card-actions mt-6 gap-6">
           <button
             onClick={() => handelStor(book.bookId)}
